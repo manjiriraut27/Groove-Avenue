@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | </title>
+   </head> 
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #f8cdda, #b9c2c4);
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-header {
+        background-color: #1f4e5a;
+        color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .modal-title {
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .form-label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .form-select {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .btn-primary {
+        background-color: #1f4e5a;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #14403b;
+    }
+
+    .btn-close {
+        background: none;
+        border: none;
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: #f8f9fa;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .modal-footer a {
+        color: #1f4e5a;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .modal-footer a:hover {
+        color: #14403b;
+    }
+
+    .btn-secondary {
+        border-radius: 5px;
+        background-color: #ffc107;
+        color: #333;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+        background-color: #e0a800;
+        color: #000;
+    }
+</style>
+<body>
+        <!-- Join Now Modal -->
+     <div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joinModalLabel">Join Groove Avenue</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required><br><br>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required><br><br>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required><br><br>
+                        </div>
+                        <div class="mb-3">
+                            <label for="program" class="form-label">Program</label>
+                            <select class="form-select" id="program" required>
+                                <option selected disabled>Choose a program</option>
+                                <option value="certification">One Year Certification Program</option>
+                                <option value="half-year">Half Year Program</option>
+                                <option value="intensives">Intensives</option>
+                            </select><br><br>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Register</button><br><br>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Already a member? <a href="login.html" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    </body>
+    </html>

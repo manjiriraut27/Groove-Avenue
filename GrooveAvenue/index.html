@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-brand img {
+            height: 50px;
+        }
+        .hero {
+            position: relative;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            overflow: hidden;
+            background-image: url(ing3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            z-index: 1;
+            
+        }
+        .dance-card img {
+            height: 180px; /* Smaller size for the images */
+            
+            object-fit: cover;
+        }
+        .dance-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            width: 320px;
+        }
+        .dance-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .programs{
+            background-color: #e8e9ea;
+            padding: 50px 0;
+        }
+        
+        
+        .footer {
+            background-color: #343a40;
+            color: white;
+        }
+        .footer a {
+            color: #ffc107;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #f8f9fa;
+        }
+        /* Smooth transition for links and buttons */
+        .nav-link, .btn {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-link:hover, .btn:hover {
+            color: #ffc107;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Groove Avenue.png" alt="Groove Avenue">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="danceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dance Styles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="danceDropdown">
+                            <li><a class="dropdown-item" href="kathak.html">Kathak</a></li>
+                            <li><a class="dropdown-item" href="Bharatnatyam.html">Bharatnatyam</a></li>
+                            <li><a class="dropdown-item" href="semi.html">Semi-Classical</a></li>
+                            <li><a class="dropdown-item" href="zumba.html">Zumba</a></li>
+                            <li><a class="dropdown-item" href="conte.html">Contemporary</a></li>
+                            <li><a class="dropdown-item" href="hiphop.html">Hip-Hop</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+                            <li><a class="dropdown-item" href="#certification">One Year Certification Program</a></li>
+                            <li><a class="dropdown-item" href="#half-year">Half Year Program</a></li>
+                            <li><a class="dropdown-item" href="#intensives">Intensives</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="join.html" class="btn btn-outline-light">Join Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <div class="hero" id="home">
+       
+        <h1>Welcome to Groove Avenue</h1>
+    </div>
+     
+
+    <!-- About Section -->
+    <section class="container my-5" id="about">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p class="text-center">At Groove Avenue, we celebrate the art of dance and provide professional training in various dance forms. Whether you're a beginner or a seasoned performer, our expert instructors will guide you every step of the way. Explore our diverse dance styles and find the one that inspires you!</p>
+    </section>
+
+
+    <!-- Dance Styles -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Dance Styles</h2>
+        <div class="row text-center">
+            <!-- Kathak -->
+            <div class="col-md-4 mb-4" id="kathak">
+                <div class="card dance-card">
+                    <img src="kathak.webp" class="card-img-top" alt="Kathak">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="kathak.html" style="color: inherit;text-decoration: none;">Kathak</a></h5>
+                        <p class="card-text">A classical dance form from North India.</p>
+                        <p class="card-text"></p> Fee: ₹2000/month</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bharatnatyam -->
+            <div class="col-md-4 mb-4" id="bharatnatyam">
+                <div class="card dance-card">
+                    <img src="bharat.jpg" class="card-img-top" alt="Bharatnatyam">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="Bharatnatyam.html" style="color: inherit;text-decoration: none;">Bharatnatyam</a></h5>
+                        <p class="card-text">A graceful classical dance from Tamil Nadu.</p>
+                        <p class="card-text"></p> Fee: ₹2500/month</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Semi-Classical -->
+            <div class="col-md-4 mb-4" id="semi-classical">
+                <div class="card dance-card">
+                    <img src="semi.jpg" class="card-img-top" alt="Semi-Classical">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="semi.html" style="color: inherit;text-decoration: none;">Semi-Classical</a></h5>
+                        <p class="card-text">A fusion of classical and modern styles.</p>
+                        <p class="card-text"> Fee: ₹2200/month</p>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Zumba -->
+            <div class="col-md-4 mb-4" id="zumba">
+                <div class="card dance-card">
+                    <img src="zumba.jpg" class="card-img-top" alt="Zumba">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="zumba.html" style="color: inherit;text-decoration: none;">Zumba</a></h5>
+                        <p class="card-text">Fitness and fun combined</p>
+                        <p class="card-text">Fee: ₹1500/month</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Contemporary -->
+            <div class="col-md-4 mb-4" id="contemporary">
+                <div class="card dance-card">
+                    <img src="conte.jpg" class="card-img-top" alt="Contemporary">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="conte.html" style="color: inherit;text-decoration: none;">Contemporary</a></h5>
+                        <p class="card-text">Expressive and fluid movements.</p>
+                        <p class="card-text"></p> Fee: ₹2000/month</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Hip-Hop -->
+            <div class="col-md-4 mb-4 mx-auto" id="hiphop">
+                <div class="card dance-card">
+                    <img src="hiphop.jpeg" class="card-img-top" alt="Hip-Hop">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="hiphop.html" style="color: inherit;text-decoration: none;">Hip-Hop</a></h5>
+                        <p class="card-text">Groovy and street-style moves. </p>
+                        <p class="card-text">Fee: ₹2000/month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5" id="programs">    
+       <h2 class="text-center mb-4">Programs</h2>
+       <div class="row text-center">
+       <div class="col-md-4 mb-4 mx-auto" id="One Year Certification Program">
+        <div class="card dance-card">
+            <div class="card-body">
+            <h5 class="card-title"> One Year Certification Program</h5>
+            <p> A one-year certification program at a dance academy typically offers intensive training in various dance styles, combining practical learning, theoretical instruction, and performance preparation.</p>
+        <p> Fee: ₹10000 -/only</p>  
+        </div>
+            </div>
+            </div>
+            
+
+            <div class="col-md-4 mb-4 mx-auto" id="Half year program">
+                <div class="card dance-card">
+                    <div class="card-body">
+                    <h5 class="card-title"> Half year program</h5>
+                    <p> A six-month dance certification program is more comprehensive than a one-month program and typically includes advanced training across various styles, with a focus on technique, choreography, performance, and professional preparation. </p>
+                   <p> Fee: ₹6000 -/only </p>
+                    </div>
+                    
+                    </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mx-auto" id="Intensives">
+                        <div class="card dance-card">
+                            <div class="card-body">
+
+                            <h5 class="card-title">Intensives</h5>
+                            <p> An intensive dance program typically refers to a condensed, high-energy, and immersive course designed to help dancers improve their skills in a short period of time. These programs are often rigorous and focused on deepening technical proficiency, expanding versatility across various dance styles, and preparing students for professional-level performances or competitions.</p>
+                        <p> Fee: ₹4000 -/only</p>  
+                        </div>
+                            </div> 
+                            </div> 
+                        </div>   
+                    </section>
+
+    <!-- Contact Section -->
+    <section class="container my-5" id="contact">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-center">Email: groove@avenue.com | Phone: +91-12345-67890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Groove Avenue. All Rights Reserved. <a href="#home">Back to top</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
